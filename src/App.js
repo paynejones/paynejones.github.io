@@ -1,14 +1,30 @@
 import './App.css';
 import Header from './components/Header';
+import WorkEx from './components/WorkEx';
+import About from './components/About';
+
 
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <body>
-        <img className="profileimg" src="https://preview.redd.it/59v38gtva7dd1.jpeg?width=640&crop=smart&auto=webp&s=0d1f1d7b0c67fce26bb3d016cb47458cfcd5f2f8" alt=""/>
-      </body>
+      <div className='body'>
+        <About/>
+        <div className='workex'>
+          <WorkEx name='BC Ministry of Social Development and Poverty Reduction' title='Technical Analyst Co-op'></WorkEx>
+          <WorkEx name='Department of National Defense' title='Software Co-op Student'></WorkEx>
+          <WorkEx name='Saanich Parks and Recreation' title='Program Assistant'></WorkEx>
+        </div>
+      </div>
+      <div className='body-mobile'>
+        <About/>
+        <div className='workex-mobile'>
+          <WorkEx name='BC Ministry of Social Development and Poverty Reduction' title='Technical Analyst Co-op'></WorkEx>
+          <WorkEx name='Department of National Defense' title='Software Co-op Student'></WorkEx>
+          <WorkEx name='Saanich Parks and Recreation' title='Program Assistant'></WorkEx>
+        </div>
+      </div>
     </div>
   );
 }
