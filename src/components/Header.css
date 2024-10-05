@@ -8,6 +8,9 @@
     padding: 10px;
     border-bottom-color: #eb5e28;
     display: flex;
+    position: sticky;
+    font-family: "Fira Sans";
+    top: 0;
 }
 
 .link{
@@ -22,7 +25,7 @@
     flex: 1;
 }
 
-.title{
+.center-name{
     padding: 10px 20px;
     justify-content: center;
     align-items: center;
@@ -40,23 +43,12 @@
     flex: 1;
 }
 
-.header-mobile{
-    background-color: #403d39;
-    border-bottom: 5%;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-style: solid;
-    padding: 2%;
-    border-bottom-color: #eb5e28;
-    display: none;
-}
 
 @media (max-width: 768px){
     .header{
-        display: none;
+        padding: 2%;
     }
-    .header-mobile{
-        display: flex;
+    .center-name{
+        display: none;
     }
 }

@@ -1,17 +1,9 @@
 .profileimg {
     border-radius: 100%;
-    width: 25%;
+    width: 30%;
     border-color: #eb5e28;
     border-style: solid;
     border-width: 5%;
-}
-
-.profileimg-mobile {
-    border-radius: 100%;
-    width: 50%;
-    border-color: #eb5e28;
-    border-style: solid;
-    border-width: 2%;
 }
 
 .about{
@@ -21,37 +13,26 @@
     flex-direction: column;
 }
 
-.about-mobile{
-    justify-content: center;
-    align-items: center;
-    display: none;
-    flex-direction: column;
-}
-
 .name{
     color: #fffcf2;
 }
 
 .text{
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: medium;
     color: #fffcf2;
 }
 
-.name-mobile{
-    font-size: x-large;
-    color: #fffcf2;
-}
-
-.text-mobile{
-    font-size: small;
-    color: #fffcf2;
-}
-
 @media (max-width: 768px){
-    .about{
-        display: none;
+    .name{
+        font-size: x-large;
     }
-    .about-mobile{
-        display: flex;
+    .profileimg {
+        width: 50%;
+        border-width: 2%;
+    }
+    .text{
+        font-size: small;
     }
   }

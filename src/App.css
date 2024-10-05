@@ -6,25 +6,36 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: "Fira Sans";
 }
 
-
-.body-mobile{
-  padding-top: 30%;
-  background-color: #252422;
-  display: flex;
+.workex{
+  display:flex;
   justify-content: center;
   align-items: center;
-  display: none;
-  flex-direction: column;
+  min-width: 100%;
+  margin: 0 auto;
+}
+
+.worktitle{
+  color: #fffcf2;
+  text-decoration: underline;
+  padding-top: 10%;
+  display: flex;
 }
 
 
 @media (max-width: 768px){
   .body{
-      display: none;
+    padding-top: 30%;
   }
-  .body-mobile{
-      display: flex;
+  .workex{
+    flex-direction: column;
+    min-width: 0%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .worktitle{
+    padding-top: 20%;
   }
 }
