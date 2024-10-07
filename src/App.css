@@ -1,0 +1,41 @@
+
+.body{
+  padding-top: 10%;
+  background-color: #252422;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Fira Sans";
+}
+
+.workex{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  margin: 0 auto;
+}
+
+.worktitle{
+  color: #fffcf2;
+  text-decoration: underline;
+  padding-top: 10%;
+  display: flex;
+}
+
+
+@media (max-width: 768px){
+  .body{
+    padding-top: 30%;
+  }
+  .workex{
+    flex-direction: column;
+    min-width: 0%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .worktitle{
+    padding-top: 20%;
+  }
+}
