@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import WorkEx from './components/WorkEx';
 import About from './components/About';
+import Project from './components/Project';
 
 
 
@@ -22,7 +23,8 @@ function App() {
         </div>
         <h2 className='worktitle'>Projects</h2>
         <div className='Cool Projects'>
-          
+          <Project user="paynejones" repo="paynejones.github.io"/>
+          <Project user="vike-and-sell" repo=""/>
         </div>
       </div>
     </div>
