@@ -24,7 +24,7 @@ function App() {
         <h2 className='worktitle'>Projects</h2>
         <div className='Cool Projects'>
           <Project user="paynejones" repo="paynejones.github.io"/>
-          <Project user="vike-and-sell" repo=""/>
+          <Project user="vike-and-sell"/>
         </div>
       </div>
     </div>
