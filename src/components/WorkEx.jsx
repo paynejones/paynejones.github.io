@@ -6,6 +6,7 @@ export default function WorkEx(props){
             <h3 className='title'>{props.title}</h3>
             <h3 className='workplace'>{props.name}</h3> 
             <p className='dates'>{props.dates}</p>
+            <p className='blurb'>{props.blurb}</p>
         </div>
     );
 }

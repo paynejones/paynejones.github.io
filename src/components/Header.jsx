@@ -9,9 +9,9 @@ export default function Header(){
     return (
         <header className='header'>
             <div className='links'>
-                <a className='link' href="https://github.com/paynejones"><FontAwesomeIcon icon={faGithub} size="xl"/></a>
-                <a className='link' href="https://www.linkedin.com/in/payne-jones/"><FontAwesomeIcon icon={faLinkedin} size="xl"/></a>
-                <a className='link' href="mailto:paynejones01@gmail.com"><FontAwesomeIcon icon={faEnvelope} size="xl"/></a>
+                <a className='link' href="https://github.com/paynejones" aria-label="My Github Account"><FontAwesomeIcon icon={faGithub} size="xl"/></a>
+                <a className='link' href="https://www.linkedin.com/in/payne-jones/" aria-label="My LinkedIn Account"><FontAwesomeIcon icon={faLinkedin} size="xl"/></a>
+                <a className='link' href="mailto:paynejones01@gmail.com" aria-label="My Email"><FontAwesomeIcon icon={faEnvelope} size="xl"/></a>
             </div>
             <div className='center-name'>
                 Payne Jones

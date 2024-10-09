@@ -9,7 +9,7 @@
   font-family: "Fira Sans";
 }
 
-.workex{
+.workex, .projects{
   display:flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@
 .worktitle{
   color: #fffcf2;
   text-decoration: underline;
-  padding-top: 10%;
+  padding-top: 5%;
   display: flex;
 }
 
@@ -29,11 +29,13 @@
   .body{
     padding-top: 30%;
   }
-  .workex{
+  .workex, .projects{
     flex-direction: column;
     min-width: 0%;
     align-items: flex-start;
     justify-content: flex-start;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .worktitle{
     padding-top: 20%;

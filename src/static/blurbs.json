@@ -1,0 +1,8 @@
+{
+    "about": "I am a 4th year Software Engineering Student from the University of Victoria. This is a site to host my work experience and projects I have worked on.",
+    "bcgov": "I was originally tasked with web dev in Typescript and React, but later worked with tools like Openshift, Postgres and Docker.",
+    "dnd": "I created web apps with Typescript and Vue. I also worked with Oracle as a datastore.",
+    "saanich": "Worked within a team to create the best experience possible for participants.",
+    "vikeandsell": "This is my capstone project. I was in a group with 10 other students and we were tasked with creating an e-commerce website for UVic students. I was a part of the ResOps team.",
+    "site": "This is the repo for this site you're on right now. This project was done to refresh my frontend skills."
+}

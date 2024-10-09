@@ -3,17 +3,17 @@
     color: #fffcf2;
 }
 
-.title{
+.title, .repo{
     color: #fffcf2;
     font-size: larger;
 }
 
-.dates{
+.dates, .blurb{
     color: #fffcf2;
     font-size:small;
 }
 
-.work{
+.work, .project{
     flex: 1;
     padding-left: 10%;
     padding-right: 10%;
@@ -21,17 +21,17 @@
 }
 
 @media (max-width: 768px){
-    .title{
+    .title, .repo{
         font-size: medium;
     }
     .workplace{
         font-size: x-small;
     }
-    .work{
+    .work, .project{
         padding-left: 0%;
         padding-right: 0%;
     }
-    .dates{
+    .dates, .blurb{
         font-size: x-small;
     }
 }
