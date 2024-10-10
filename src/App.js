@@ -19,7 +19,7 @@ function App() {
         <h2 className='worktitle'>Work Experience</h2>
         <div className='workex'>
           <WorkEx name='BC Ministry of Social Development and Poverty Reduction' title='Technical Analyst Co-op' dates='May 2022 - Dec 2022' blurb={blurbs.bcgov}></WorkEx>
-          <WorkEx name='Department of National Defense' title='Software Co-op Student' dates='Jun 2021 - Aug 2021' blurb={blurbs.dnd}></WorkEx>
+          <WorkEx name='Department of National Defense Base Information Services' title='Software Co-op Student' dates='Jun 2021 - Aug 2021' blurb={blurbs.dnd}></WorkEx>
           <WorkEx name='Saanich Parks and Recreation' title='Program Assistant' dates='Jul 2018 - Aug 2020' blurb={blurbs.saanich}></WorkEx>
         </div>
         <h2 className='worktitle'>Projects</h2>
