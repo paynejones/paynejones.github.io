@@ -1,4 +1,4 @@
-import profile_photo from '../static/profile_photo-compressed.webp';
+import profile_photo from '../static/profile_photo-compressed-sized.webp';
 import './About.css';
 
 export default function About(props){
