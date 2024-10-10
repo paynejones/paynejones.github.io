@@ -4,6 +4,7 @@
     border-color: #eb5e28;
     border-style: solid;
     border-image: 5%;
+    aspect-ratio: auto 4450 / 3650;
 }
 
 .about{
