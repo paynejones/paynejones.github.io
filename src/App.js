@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import WorkEx from './components/WorkEx';
 import About from './components/About';
+import Contact from './components/Contact';
 import Project from './components/Project';
 import blurbs from './static/blurbs.json';
 
@@ -27,7 +28,10 @@ function App() {
           <Project user="vike-and-sell" blurb={blurbs.vikeandsell}/>
           <Project user="paynejones" repo="paynejones.github.io" blurb={blurbs.site}/>
         </div>
-        <div className='worktitle'/>
+        <h2 className='worktitle'>Contact Me</h2>
+        <div className='contactme'>
+          <Contact/>
+        </div>
       </div>
     </div>
   );
