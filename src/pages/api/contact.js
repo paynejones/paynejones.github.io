@@ -42,8 +42,8 @@ export default async function handler(req, res) {
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
       to: process.env.GMAIL_USER,
-      subject: `New message from ${name}`,
-      text: `Email: ${email}\n\n${message}`,
+      subject: `New message from ${name}(portfolio-site)`,
+      text: `New message received from: ${name}\nEmail: ${email}\n\n${message}`,
     });
 
     return res.status(200).json({ message: 'Message sent successfully!' });
