@@ -36,6 +36,7 @@ export default function Contact(props){
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
                     required
                     className={styles.input}
+                    maxLength={20}
                 />
                 <input
                     type="email"
@@ -51,6 +52,7 @@ export default function Contact(props){
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
                     required
                     className={styles.textarea}
+                    maxLength={1000}
                 />
                 <ReCAPTCHA
                     ref={recaptchaRef}

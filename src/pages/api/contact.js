@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer';
+import sanitizeHtml from 'sanitize-html';
 
 const RATE_LIMIT_WINDOW = 60 * 1000; // 1 minute
 const ipCache = new Map();
@@ -17,6 +18,10 @@ export default async function handler(req, res) {
     return res.status(429).json({ message: 'Too many requests — try again later.' });
   }
   ipCache.set(ip, now);
+
+  //Sanitize Message and Name
+  const clean_message = sanitizeHtml(message, {allowedTags: [], allowedAttributes: {}})
+  const clean_name = sanitizeHtml(name, {allowedTags: [], allowedAttributes: {}})
 
   // Verify reCAPTCHA
   const captchaVerify = await fetch(
@@ -40,10 +45,10 @@ export default async function handler(req, res) {
     });
 
     await transporter.sendMail({
-      from: `"${name}" <${email}>`,
-      to: process.env.GMAIL_USER,
+      from: `"${clean_name}" <${email}>`,
+      to: process.env.RECEIVER_EMAIL,
       subject: `New message from ${name}(portfolio-site)`,
-      text: `New message received from: ${name}\nEmail: ${email}\n\n${message}`,
+      text: `New message received from: ${clean_name}\nEmail: ${email}\n\n${clean_message}`,
     });
 
     return res.status(200).json({ message: 'Message sent successfully!' });
