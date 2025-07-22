@@ -36,7 +36,7 @@ export default function Contact(props){
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
                     required
                     className={styles.input}
-                    maxLength={20}
+                    maxLength={50}
                 />
                 <input
                     type="email"
