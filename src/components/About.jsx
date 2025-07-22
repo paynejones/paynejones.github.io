@@ -1,12 +1,17 @@
 import profile_photo from '../static/profile_photo-compressed-sized.webp';
-import './About.css';
+import styles from './About.module.css';
+import Image from 'next/image'
 
 export default function About(props){
     return(
-        <div className='about'>
-            <img className="profileimg"  rel="preload" fetchpriority="high" loading="eager" src={profile_photo} alt="Payne Jones"/>
-            <h1 className='name'>Payne Jones</h1>
-            <p className='text'>{props.blurb}</p>
+        <div className={styles.about}>
+            <div className={styles.col}>
+                <Image loading="eager" priority={true} className={styles.profileimg} src={profile_photo} alt="Payne Jones"/>
+                <h1 className={styles.name}>Payne Jones</h1>
+            </div>
+            <div className={styles.col}>
+                <p className={styles.text}>{props.blurb}</p>
+            </div>
         </div>
     );
 }

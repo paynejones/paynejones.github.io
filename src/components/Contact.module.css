@@ -1,0 +1,43 @@
+.text{
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: medium;
+  color: #fffcf2;
+}
+
+.contactform {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #fffcf2;
+  padding-bottom: 20%;
+}
+
+
+.input,
+.textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #fffcf2;
+}
+
+.textarea{
+  height: 150px;
+  width: 300px;
+}
+
+.button {
+  background-color: #eb5e28;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #d24914;
+}

@@ -1,4 +1,4 @@
-import './WorkEx.css'
+import styles from './WorkEx.module.css'
 
 export default function Project(props){
     var link = "https://github.com/"
@@ -11,9 +11,9 @@ export default function Project(props){
         title += props.repo
     }
     return(
-        <div className='project'>
-            <a className='repo' href={link}>{title}</a>
-            <p className='blurb'>{props.blurb}</p>
+        <div className={styles.project}>
+            <a className={styles.repo} href={link}>{title}</a>
+            <p className={styles.blurb}>{props.blurb}</p>
         </div>
     );
 }

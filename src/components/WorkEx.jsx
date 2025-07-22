@@ -1,12 +1,12 @@
-import './WorkEx.css';
+import styles from './WorkEx.module.css';
 
 export default function WorkEx(props){
     return(
-        <div className='work'>
-            <h3 className='title'>{props.title}</h3>
-            <h3 className='workplace'>{props.name}</h3> 
-            <p className='dates'>{props.dates}</p>
-            <p className='blurb'>{props.blurb}</p>
+        <div className={styles.work}>
+            <h2 className={styles.title}>{props.title}</h2>
+            <h2 className={styles.workplace}>{props.name}</h2> 
+            <p className={styles.dates}>{props.dates}</p>
+            <p className={styles.blurb}>{props.blurb}</p>
         </div>
     );
 }

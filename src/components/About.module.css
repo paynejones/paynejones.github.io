@@ -1,6 +1,7 @@
 .profileimg {
     border-radius: 100%;
-    width: 30%;
+    height: auto;
+    width: 50%;
     border-color: #eb5e28;
     border-style: solid;
     border-image: 5%;
@@ -9,9 +10,19 @@
 
 .about{
     justify-content: center;
-    align-items: center;
     display: flex;
+}
+
+.about_mobile{
+    display: none;
+}
+
+.col{
+    display:flex;
     flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
 }
 
 .name{
@@ -20,8 +31,8 @@
 
 .text{
     padding-left: 5%;
-    padding-right: 5%;
-    font-size: medium;
+    padding-right: 20%;
+    font-size: x-large;
     color: #fffcf2;
 }
 
@@ -30,10 +41,22 @@
         font-size: x-large;
     }
     .profileimg {
+        height: auto;
         width: 50%;
         border-width: 2%;
     }
     .text{
         font-size: small;
+        text-align: center;
+        padding-right: 5%;
+    }
+    .about{
+        display: none;
+    }
+    .about_mobile{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
   }
