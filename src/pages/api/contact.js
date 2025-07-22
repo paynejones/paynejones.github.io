@@ -41,7 +41,7 @@ export default async function handler(req, res) {
 
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
-      to: process.env.RECEIVER_EMAIL,
+      to: process.env.GMAIL_USER,
       subject: `New message from ${name}`,
       text: `Email: ${email}\n\n${message}`,
     });
