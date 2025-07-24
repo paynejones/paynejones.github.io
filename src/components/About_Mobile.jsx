@@ -1,4 +1,4 @@
-import profile_photo from '../static/profile_photo-compressed-sized.webp';
+import profile_photo from '../static/profile_photo-compressed-sized-transformed.webp';
 import styles from './About.module.css';
 import Image from 'next/image'
 
