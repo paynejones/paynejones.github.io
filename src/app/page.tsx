@@ -7,6 +7,7 @@ import Contact from '../components/Contact';
 import Project from '../components/Project';
 import blurbs from '../static/blurbs.json';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 
@@ -18,6 +19,7 @@ function page() {
       </style>
       <Header/>
       <Analytics/>
+      <SpeedInsights/>
       <div className={styles.body}>
         <About blurb={blurbs.about}/>
         <About_mobile blurb={blurbs.about}/>
